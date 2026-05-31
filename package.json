@@ -1,0 +1,8 @@
+{ 
+  "name": "usa-china-army", 
+  "version": "1.0.0", 
+  "type": "module", 
+  "scripts": { "build": "vite build", "vercel-build": "npm run build" }, 
+  "dependencies": { "@vercel/node": "^3.0.0" }, 
+  "devDependencies": { "vite": "^5.2.11" } 
+} 

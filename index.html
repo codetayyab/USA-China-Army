@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html> 
+<head><title>USA China Army</title></head> 
+<body> 
+<h1>USA China Army</h1> 
+<button onclick="testAPI()">Test API</button> 
+<div id="response"></div> 
+<script> 
+async function testAPI() { 
+  const res = document.getElementById('response'); 
+  const response = await fetch('/api/gemini', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({prompt:'Hello'})}); 
+  const data = await response.json(); 
+  res.innerHTML = JSON.stringify(data); 
+} 
+</script> 
+</body> 
+</html> 
